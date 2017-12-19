@@ -1,6 +1,11 @@
 var express = require('express');
-var app = express.Router();
+var app = express();
+var port = process.env.PORT || 3000;
 
 app.get('/', (req,res)=>{
-  res.sendFile('index.html');
+  res.sendFile(__dirname + '/index.html');
+})
+
+app.listen(port, function(){
+  console.log('App up and running.')
 })
