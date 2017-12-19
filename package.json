@@ -1,0 +1,23 @@
+{
+  "name": "slack_app",
+  "version": "1.0.0",
+  "description": "Retrieves and displays conversations.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penoutlet/Slack_App.git"
+  },
+  "author": "Sam Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/penoutlet/Slack_App/issues"
+  },
+  "homepage": "https://github.com/penoutlet/Slack_App#readme"
+}
