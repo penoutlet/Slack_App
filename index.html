@@ -7,9 +7,19 @@
 	  src="https://code.jquery.com/jquery-2.2.4.min.js"
 	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 	  crossorigin="anonymous"></script>
+<script>
+	$.ajax({url: 'https://slack.com/api/channels.replies?token=xoxp-288410418080-290134663143-291128827367-48684b57de0796bd9dbbcb88fb689219&channel=C8GV8LD7D&thread_ts=1513870580.000696', method:'GET',
+success:function(messages){
+	for (var i =0;i<messages.messages.length;i++) {
+		$('#conversations').append('<div>' + JSON.stringify(messages.messages[i].text) + '</div>')
+		// $('#conversations').append('<div>' + JSON.stringify(messages.messages[i].replies) + '</div>')
+	console.log(messages)
+	}
 
+}})
+</script>
 </head>
 <body>
-<div id='conversations'> Conversations go here. </div>
+<div id='conversations'>  </div>
 </body>
 </html>
